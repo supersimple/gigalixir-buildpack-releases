@@ -110,9 +110,9 @@ fi
 VERSION=`echo $DIRS | cut -d '/' -f 6`
 
 # copy data
-touch data.txt
-touch $build_dir/$app_relative_path/data2.txt
-echo $build_dir/$app_relative_path
+
+touch _build/${RELEASE_ENV}/rel/$APP/priv/data.txt
+echo _build/${RELEASE_ENV}/rel/$APP/
 
 # create tarball
 mkdir -p $cache_dir/out
