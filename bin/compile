@@ -109,9 +109,6 @@ if [ ${#DIRS[@]} -ne 1 ]; then
 fi
 VERSION=`echo $DIRS | cut -d '/' -f 6`
 
-# copy data
-touch _build/${RELEASE_ENV}/rel/$APP/priv/data.txt
-
 # create tarball
 mkdir -p $cache_dir/out
 rm -f $cache_dir/out/*
