@@ -112,8 +112,8 @@ VERSION=`echo $DIRS | cut -d '/' -f 6`
 # copy data
 touch data.txt
 touch $build_dir/$app_relative_path/data2.txt
-touch tmp/data3.txt
-touch bin/data4.txt
+touch ~/tmp/data3.txt
+touch ~/bin/data4.txt
 
 # create tarball
 mkdir -p $cache_dir/out
